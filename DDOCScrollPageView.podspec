@@ -12,6 +12,6 @@ s.source_files = "DDOCScrollPageView/**/*.{h,m}"
 s.requires_arc = true
 s.frameworks = "Foundation","UIKit"
 
-s.dependency "Masonry"
+s.dependency "Masonry", "~> 1.1.0"
 
 end
