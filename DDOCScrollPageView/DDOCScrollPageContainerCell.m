@@ -201,6 +201,7 @@
         v.pagingEnabled = YES;
         v.showsHorizontalScrollIndicator = NO;
         v.delegate = self;
+        v.bounces = NO;
         _scrollView = v;
     }
     return _scrollView;

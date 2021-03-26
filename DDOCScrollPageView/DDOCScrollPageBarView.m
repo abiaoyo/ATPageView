@@ -213,9 +213,10 @@
     }else{
         [self handleBarStyleDefaultContainerDidScroll:scrollView fromIndex:fromIndex toIndex:toIndex progress:progress];
     }
-    
     if(progress != 1.0f && progress != 0.0f){
-        self.selectedItemView = toItemView;
+        if(progress >0.5f){
+            self.selectedItemView = toItemView;
+        }
     }
 }
 
@@ -323,11 +324,11 @@
         self.progressView.frame = defaultItemModel.itemProgressFrame;
         
         if(_styleModel.style == DDOCScrollPageBarFixed){
-            [self handleBarStyleFixedContainerDidScroll:nil fromIndex:0 toIndex:selectedItemIndex progress:0.9999999];
+            [self handleBarStyleFixedContainerDidScroll:nil fromIndex:0 toIndex:selectedItemIndex progress:1];
         }else if(_styleModel.style == DDOCScrollPageBarReptile){
-            [self handleBarStyleReptileContainerDidScroll:nil fromIndex:((selectedItemIndex-1)>0?selectedItemIndex:0) toIndex:selectedItemIndex progress:0.9999999];
+            [self handleBarStyleReptileContainerDidScroll:nil fromIndex:((selectedItemIndex-1)>0?selectedItemIndex:0) toIndex:selectedItemIndex progress:1];
         }else{
-            [self handleBarStyleDefaultContainerDidScroll:nil fromIndex:0 toIndex:selectedItemIndex progress:0.9999999];
+            [self handleBarStyleDefaultContainerDidScroll:nil fromIndex:0 toIndex:selectedItemIndex progress:1];
         }
     }
 
@@ -549,21 +550,29 @@
     
     self.progressView.frame = CGRectMake(progressX,progressY, width, _progressHeight);
     
-    [self scrollItemToCenter:toItemView progress:progress];
+//    NSLog(@"fromIndex:%@ \t toIndex:%@ \t progress:%@",@(fromIndex),@(toIndex),@(progress));
+    UIView * v = toItemView;
+    if(fromIndex < toIndex && progress == 0){
+        v = fromItemView;
+    }
+    [self scrollItemToCenter:v progress:progress];
 }
 
 - (void)scrollItemToCenter:(UIView *)toItemView progress:(float)progress{
     CGSize contentSize = self.scrollView.contentSize;
-    CGRect contentRect = self.bounds;
+    CGFloat selfWidth = self.bounds.size.width;
+    CGFloat toItemCenterX = toItemView.center.x;
     
-    if(progress != 1.0f && progress != 0.0f){
-        CGPoint targetOffset = CGPointMake(toItemView.center.x-CGRectGetWidth(contentRect)/2.0, 0);
-        if(CGRectGetWidth(contentRect) < contentSize.width){
+    if(progress == 1.0f || progress == 0.0f){
+        CGPoint targetOffset = CGPointMake(toItemCenterX-selfWidth/2.0, 0);
+        
+        //如果当前视图的宽度>滚动视图的宽度，则需要滚动
+        if(selfWidth < contentSize.width){
             if(targetOffset.x < 0){
                 targetOffset.x = -self.scrollView.contentInset.left;
             }else{
-                if((targetOffset.x+CGRectGetWidth(contentRect)) > (contentSize.width+self.scrollView.contentInset.right)){
-                    targetOffset.x = contentSize.width+self.scrollView.contentInset.right - CGRectGetWidth(contentRect);
+                if((targetOffset.x+selfWidth) > (contentSize.width+self.scrollView.contentInset.right)){
+                    targetOffset.x = contentSize.width+self.scrollView.contentInset.right - selfWidth;
                 }
             }
         }else{

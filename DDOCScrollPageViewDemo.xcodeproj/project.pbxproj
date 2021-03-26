@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181E9EAE260DB92E0002FB8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E9EAA260DB92D0002FB8C /* AppDelegate.m */; };
+		181E9EAF260DB92E0002FB8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E9EAB260DB92D0002FB8C /* ViewController.m */; };
 		53D1CDF023BAEF0900D649DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D1CDEF23BAEF0900D649DC /* Assets.xcassets */; };
 		53D1CDF323BAEF0900D649DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D1CDF123BAEF0900D649DC /* LaunchScreen.storyboard */; };
 		53D1CDF623BAEF0900D649DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CDF523BAEF0900D649DC /* main.m */; };
@@ -17,9 +19,7 @@
 		53D1CE0E23BAEF3900D649DC /* DDOCScrollPageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE0623BAEF3900D649DC /* DDOCScrollPageContainerViewController.m */; };
 		53D1CE0F23BAEF3900D649DC /* DDOCScrollPageBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE0923BAEF3900D649DC /* DDOCScrollPageBarView.m */; };
 		53D1CE5D23BAF2C400D649DC /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5123BAF2C300D649DC /* ViewController2.m */; };
-		53D1CE5E23BAF2C400D649DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5323BAF2C300D649DC /* AppDelegate.m */; };
 		53D1CE5F23BAF2C400D649DC /* TestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5423BAF2C300D649DC /* TestViewController1.m */; };
-		53D1CE6023BAF2C400D649DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5523BAF2C300D649DC /* ViewController.m */; };
 		53D1CE6123BAF2C400D649DC /* TestViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5623BAF2C300D649DC /* TestViewController2.m */; };
 		53D1CE6223BAF2C400D649DC /* TestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5723BAF2C300D649DC /* TestViewController3.m */; };
 		53D1CE6323BAF2C400D649DC /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D1CE5923BAF2C300D649DC /* ViewController4.m */; };
@@ -30,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		09E5F3E3E53897345F75B026 /* Pods-DDOCScrollPageViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDOCScrollPageViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-DDOCScrollPageViewDemo/Pods-DDOCScrollPageViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		181E9EAA260DB92D0002FB8C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		181E9EAB260DB92D0002FB8C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		181E9EAC260DB92E0002FB8C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		181E9EAD260DB92E0002FB8C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		25083E84A14440A026BCA074 /* libPods-DDOCScrollPageViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDOCScrollPageViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D1CDE323BAEF0200D649DC /* DDOCScrollPageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDOCScrollPageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D1CDEF23BAEF0900D649DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,14 +54,10 @@
 		53D1CE0823BAEF3900D649DC /* DDOCScrollPageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDOCScrollPageContainerViewController.h; sourceTree = "<group>"; };
 		53D1CE0923BAEF3900D649DC /* DDOCScrollPageBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOCScrollPageBarView.m; sourceTree = "<group>"; };
 		53D1CE4D23BAF2C300D649DC /* TestViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController1.h; sourceTree = "<group>"; };
-		53D1CE4E23BAF2C300D649DC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../DDScrollPageView/DDScrollPageViewDemo/AppDelegate.h; sourceTree = "<group>"; };
 		53D1CE4F23BAF2C300D649DC /* TestViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController2.h; sourceTree = "<group>"; };
 		53D1CE5023BAF2C300D649DC /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
 		53D1CE5123BAF2C300D649DC /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		53D1CE5223BAF2C300D649DC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../DDScrollPageView/DDScrollPageViewDemo/ViewController.h; sourceTree = "<group>"; };
-		53D1CE5323BAF2C300D649DC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../DDScrollPageView/DDScrollPageViewDemo/AppDelegate.m; sourceTree = "<group>"; };
 		53D1CE5423BAF2C300D649DC /* TestViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController1.m; sourceTree = "<group>"; };
-		53D1CE5523BAF2C300D649DC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../DDScrollPageView/DDScrollPageViewDemo/ViewController.m; sourceTree = "<group>"; };
 		53D1CE5623BAF2C300D649DC /* TestViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController2.m; sourceTree = "<group>"; };
 		53D1CE5723BAF2C300D649DC /* TestViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController3.m; sourceTree = "<group>"; };
 		53D1CE5823BAF2C300D649DC /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
@@ -111,17 +111,17 @@
 		53D1CDE523BAEF0200D649DC /* DDOCScrollPageViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				181E9EAC260DB92E0002FB8C /* AppDelegate.h */,
+				181E9EAA260DB92D0002FB8C /* AppDelegate.m */,
+				181E9EAD260DB92E0002FB8C /* ViewController.h */,
+				181E9EAB260DB92D0002FB8C /* ViewController.m */,
 				53D1CE6523BAF3A100D649DC /* Main.storyboard */,
-				53D1CE4E23BAF2C300D649DC /* AppDelegate.h */,
-				53D1CE5323BAF2C300D649DC /* AppDelegate.m */,
 				53D1CE4D23BAF2C300D649DC /* TestViewController1.h */,
 				53D1CE5423BAF2C300D649DC /* TestViewController1.m */,
 				53D1CE4F23BAF2C300D649DC /* TestViewController2.h */,
 				53D1CE5623BAF2C300D649DC /* TestViewController2.m */,
 				53D1CE5B23BAF2C300D649DC /* TestViewController3.h */,
 				53D1CE5723BAF2C300D649DC /* TestViewController3.m */,
-				53D1CE5223BAF2C300D649DC /* ViewController.h */,
-				53D1CE5523BAF2C300D649DC /* ViewController.m */,
 				53D1CE5C23BAF2C400D649DC /* ViewController2.h */,
 				53D1CE5123BAF2C300D649DC /* ViewController2.m */,
 				53D1CE5823BAF2C300D649DC /* ViewController3.h */,
@@ -261,15 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181E9EAF260DB92E0002FB8C /* ViewController.m in Sources */,
 				53D1CE0F23BAEF3900D649DC /* DDOCScrollPageBarView.m in Sources */,
 				53D1CE6123BAF2C400D649DC /* TestViewController2.m in Sources */,
 				53D1CE0B23BAEF3900D649DC /* DDOCScrollPageContainerCell.m in Sources */,
-				53D1CE5E23BAF2C400D649DC /* AppDelegate.m in Sources */,
+				181E9EAE260DB92E0002FB8C /* AppDelegate.m in Sources */,
 				53D1CDF623BAEF0900D649DC /* main.m in Sources */,
 				53D1CE6323BAF2C400D649DC /* ViewController4.m in Sources */,
 				53D1CE6223BAF2C400D649DC /* TestViewController3.m in Sources */,
 				53D1CE5F23BAF2C400D649DC /* TestViewController1.m in Sources */,
-				53D1CE6023BAF2C400D649DC /* ViewController.m in Sources */,
 				53D1CE0A23BAEF3900D649DC /* DDOCScrollPageManager.m in Sources */,
 				53D1CE0D23BAEF3900D649DC /* DDOCScrollPageView.m in Sources */,
 				53D1CE5D23BAF2C400D649DC /* ViewController2.m in Sources */,
