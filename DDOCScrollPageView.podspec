@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "DDOCScrollPageView"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "DDOCScrollPageView 分页滚动视图，实现tableview嵌套滚动效果，用于替代UIPageViewController"
 s.homepage     = "https://github.com/BrownCN023/DDOCScrollPageView"
 s.license      = { :type => "MIT", :file => "LICENSE" }
